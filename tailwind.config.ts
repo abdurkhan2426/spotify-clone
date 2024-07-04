@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'black': '#212121',
+        'black': '#141414',
         'light-black': '#282828',
         'dark-grey': '#535353',
         'light-grey': '#b3b3b3'

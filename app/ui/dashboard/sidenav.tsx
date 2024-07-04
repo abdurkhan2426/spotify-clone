@@ -3,13 +3,13 @@ import NavLinks from '@/app/ui/dashboard/nav-links';
 
 export default function SideNav() {
     return (
-        <>
-        <div className="flex py-4 pl-6 bg-black h-[120px] rounded-lg m-1.5 w-[420px]  grow flex-row space-x-2 md:flex-col md:space-x-0 md:space-y-2">
+        <div className="flex flex-col flex-none">
+        <div className=" py-4 pl-6 bg-black h-[120px] rounded-lg ml-1.5 mt-2 w-[420px]  grow  ">
             <NavLinks />
         </div>
         <div className="h-[710px] rounded-lg m-1.5 w-[420px] bg-black">
             <YourLibrary />
         </div>
-        </>
+        </div>
     )
 }

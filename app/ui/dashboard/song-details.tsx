@@ -1,14 +1,16 @@
 import Image from 'next/image';
 import { PlusCircleIcon } from '@heroicons/react/24/outline';
+import { currentSongDetails } from '@/app/lib/definitions';
 
 
-export default function SongDetails(){
+export default function SongDetails({ songs }: { songs: currentSongDetails[] }){
     return(
         <div className="flex flex-row">
             
+            
             <div className="pl-3 py-1 ">
             <Image
-                src="/lala.jpeg"
+                src={songs[0].image_url}
                 width={60}
                 height={60}
                 className="block"

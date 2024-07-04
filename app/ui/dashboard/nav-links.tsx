@@ -32,12 +32,12 @@ export default function NavLinks() {
             {links.map((link) => {
                 const LinkIcon = link.icon;
                 return (
-                    <a className="flex h-[40px]   w-[430px] grow items-center justify-center gap-5 rounded-md   text-md font-medium  md:flex-none md:justify-start "
+                    <a className="flex h-[50px]  w-[430px] grow items-center  gap-5 rounded-md   text-md font-medium  flex-none justify-start "
                         key={link.name}
                         href={link.href}>
                         
                         <LinkIcon className="w-6"/>
-                        <p className="hidden md:block">{link.name}</p>
+                        <p className="block">{link.name}</p>
                     </a>
                 )
             })}

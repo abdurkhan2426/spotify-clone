@@ -27,15 +27,15 @@ import {
 
 export default function YourLibrary(){
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
 
-        <div className="basis-1/4 pl-6 flex grow items-center justify-center  rounded-md   text-md font-medium  md:flex-none md:justify-start ">
+        <div className="basis-1/4 pl-3  flex grow items-center justify-center  rounded-md   text-sm font-medium  flex-none justify-start ">
         <div>
             <a className="flex h-[60px] w-[145px] gap-3 items-center "
                         key={links[0].name}
                         href={links[0].href}>
                         <RectangleStackIcon className="w-6"/>
-                        <p className="hidden md:block">{links[0].name}</p>
+                        <p className="block">{links[0].name}</p>
                     </a>
         </div>
         <div className="basis-1/2 "></div>
@@ -47,7 +47,7 @@ export default function YourLibrary(){
             </button>
         </div>
 
-        <div className="flex flex-row">
+        <div className="flex flex-row pl-5">
             <button className="basis-1/8  rounded-full hover:bg-light-black h-[20px] w-[20px] ">
                 <MagnifyingGlassIcon />
             </button>
